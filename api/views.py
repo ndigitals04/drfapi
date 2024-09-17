@@ -31,3 +31,11 @@ class BlogPostList(APIView):
 
         serializer = BlogPostSerializer(blogposts, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+class BlogPostCreate(APIView):
+    def post(self,request, format=None):
+        serializer = BlogPostSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            BlogPost.objects.create(title=request.data["title"], content=request.data["content"])
+            return Response({"BlogPost created": serializer.data})
