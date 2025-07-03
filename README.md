@@ -28,7 +28,7 @@ If you followed the above steps correctly you should be presented with a localho
 - `api/blogposts/create`: This endpoint enables creation of blogposts. Attach a JSON object containing the title and content of the blogpost. Example: `{"title": "How to Fish", content="Before one can succesfully fish..."}`
 
 
-Be sure to reach out on [X](https://github.com/Ndigitals001) if you have any inquiry or want to make a contribution.
+Be sure to reach out on [X](https://x.com/Ndigitals001) if you have any inquiry or want to make a contribution.
 
 
     
